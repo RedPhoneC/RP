@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED PHONE - The Call Has Been Made</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        .phone-image {
+            width: 200px;
+            animation: ring 1s infinite;
+        }
+        @keyframes ring {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(3deg); }
+            20% { transform: rotate(-3deg); }
+            30% { transform: rotate(3deg); }
+            40% { transform: rotate(-3deg); }
+            50% { transform: rotate(0deg); }
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: darkred;
+        }
+        .links {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .links a {
+            color: red;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .call-history {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+        .hidden-message {
+            display: none;
+            color: white;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .nft-airdrop {
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('secret').style.display = 'block';
+        }
+        function playRingSound() {
+            var audio = new Audio('https://www.soundjay.com/button/beep-07.wav');
+            audio.play();
+        }
+    </script>
+</head>
+<body onload="playRingSound()">
+    <h1>📞 The Call Has Been Made.</h1>
+    <img src="image/red phone.png" alt="Red Phone" class="phone-image">
+    <div class="buttons">
+        <button class="button" onclick="alert('You answered the call!')">Answer</button>
+        <button class="button" onclick="alert('You missed the call!')">Ignore</button>
+    </div>
+    <div class="call-history">
+        <h2>🔴 Call History:</h2>
+    </div>
+    <div class="hidden-message" id="secret">🔴 The First Answer Will Be Rewarded.</div>
+    <p class="nft-airdrop" onclick="showMessage()">📞 Claim Your Missed Call NFT</p>
+    <div class="links">
+        <p>Follow the conversation:</p>
+        <a href="https://twitter.com/RedPhoneCoin" target="_blank">🔴 Twitter</a> | 
+        <a href="https://pump.fun" target="_blank">🚀 Pump.fun</a>
+    </div>
+</body>
+</html>
