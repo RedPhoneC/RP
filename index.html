@@ -3,101 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RED PHONE - The Call Has Been Made</title>
+    <title>RED PHONE </title>
     <style>
         body {
-            background-color: black;
-            color: red;
             font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
         }
         h1 {
-            font-size: 50px;
+            color: red;
         }
-        .phone-image {
-            width: 200px;
-            animation: ring 1s infinite;
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #222;
+            border-radius: 10px;
         }
-        @keyframes ring {
-            0% { transform: rotate(0deg); }
-            10% { transform: rotate(3deg); }
-            20% { transform: rotate(-3deg); }
-            30% { transform: rotate(3deg); }
-            40% { transform: rotate(-3deg); }
-            50% { transform: rotate(0deg); }
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-        .button {
-            background-color: red;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .button:hover {
-            background-color: darkred;
-        }
-        .links {
-            margin-top: 30px;
-            font-size: 18px;
-        }
-        .links a {
+        a {
             color: red;
             text-decoration: none;
         }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        .call-history {
-            margin-top: 40px;
-            font-size: 18px;
-        }
-        .hidden-message {
-            display: none;
-            color: white;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-        .nft-airdrop {
-            margin-top: 40px;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            cursor: pointer;
-        }
     </style>
-    <script>
-        function showMessage() {
-            document.getElementById('secret').style.display = 'block';
-        }
-        function playRingSound() {
-            var audio = new Audio('https://www.soundjay.com/button/beep-07.wav');
-            audio.play();
-        }
-    </script>
 </head>
-<body onload="playRingSound()">
-    <h1>📞 The Call Has Been Made.</h1>
-    <img src="image/red phone.png" alt="Red Phone" class="phone-image">
-    <div class="buttons">
-        <button class="button" onclick="alert('You answered the call!')">Answer</button>
-        <button class="button" onclick="alert('You missed the call!')">Ignore</button>
-    </div>
-    <div class="call-history">
-        <h2>🔴 Call History:</h2>
-    </div>
-    <div class="hidden-message" id="secret">🔴 The First Answer Will Be Rewarded.</div>
-    <p class="nft-airdrop" onclick="showMessage()">📞 Claim Your Missed Call NFT</p>
-    <div class="links">
-        <p>Follow the conversation:</p>
-        <a href="https://twitter.com/RedPhoneCoin" target="_blank">🔴 Twitter</a> | 
-        <a href="https://pump.fun" target="_blank">🚀 Pump.fun</a>
+<body>
+    <div class="container">
+        <h1>🚀 RED PHONE 📞</h1>
+        
+        <div class="section">
+            <h2>About Us</h2>
+            <p>🔴 RED PHONE  is a memecoin and NFT project that embodies the most exciting and mysterious side of blockchain technology. With the slogan <strong>“The Call Has Been Made”</strong>, RED PHONE invites investors and the community to be part of one of the biggest movements in crypto.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Our Vision</h2>
+            <p>📞 To create a community-driven, speculative, and entertaining ecosystem.</p>
+            <p>🚀 To merge the world of memecoins and NFTs, offering exclusive benefits to holders.</p>
+            <p>🔴 To provide early adopters with surprises, airdrops, and whitelist opportunities.</p>
+        </div>
+        
+        <div class="section">
+            <h2>The REDP Ecosystem</h2>
+            <p>✅ <strong>Memecoin:</strong>  token – powered by the community.</p>
+            <p>✅ <strong>NFT Collection:</strong> 500 exclusive RED PHONE NFTs – for holders only.</p>
+            <p>✅ <strong>Airdrop & Rewards:</strong> Distributed to active community members post-launch.</p>
+            <p>✅ <strong>Secret Projects & Partnerships:</strong> To be revealed when the time is right.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Connect With Us</h2>
+            <p>📞 <strong>X (Twitter):</strong> <a href="https://x.com/RedPhoneCoin" target="_blank">@RedPhoneCoin</a></p>
+            <p>🚀 <strong>Community & Updates:</strong> Discord & Telegram – Coming Soon!</p>
+            
+        </div>
+        
+        <p><strong>The Red Phone is ringing… Are you ready to answer?</strong></p>
     </div>
 </body>
 </html>
